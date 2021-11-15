@@ -1,0 +1,34 @@
+<h2 class="text-center">Customer List</h2>
+<br>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr class="table-primary">
+        
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>City</th>
+            <th>Pincode</th>
+            <th>noOfOrders</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of customerlist">
+            <td>{{product.id}}</td>
+            <td>{{product.Name}}</td>
+            <td>{{product.city}}</td>
+            <td>{{product.pincode}}</td>
+            <td>{{product.noOfOrders}}</td>
+            <td><button (click)="deleteProduct(product)" class="btn btn-danger">Delete</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <button (click)="UpdateCustomer(product)"  class="btn btn-success">Update</button></td>
+             
+        </tr>
+     
+    </tbody>
+
+</table>
+<p><button class="btn btn-success" (click)="orderbyname(customerlist)">Order By Id</button></p>
+
+
+
+

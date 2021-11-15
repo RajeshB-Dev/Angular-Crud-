@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-lg " style="background-color:rgb(8, 80, 122)">
+  <ul class="navbar-nav">
+    &nbsp;&nbsp;&nbsp;
+    <li class="nav-item">
+      <a routerLink="home-page" routerLinkActive="active" class="nav-Link">Home</a>
+    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="nav-item">
+      <a routerLink="products-list" routerLinkActive="active" class="nav-Link">Customer List</a>
+    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="nav-item">
+      <a routerLink="add-product" routerLinkActive="active" class="nav-Link">AddCustomer</a>
+    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="nav-item">
+        <h2>Customer Management System</h2>
+    </li>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </ul>
+  <form class="d-flex">
+    <input class="form-control me-2" type="search" name="name" [(ngModel)]="name" placeholder="Customer-Name" aria-label="Search">
+    <button class="btn btn-outline-success" (click)="findProduct(name)" type="submit">Search</button>
+  </form>
+  <br><br>
+  </nav>
+ 
+  <br>    
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span>All Rights Reserved @2020</span>
+  </div>
+</footer>
